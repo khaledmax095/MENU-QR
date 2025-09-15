@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة طعام مطعمنا</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #c23a3a;
+        }
+        .category {
+            margin-bottom: 30px;
+        }
+        .category-title {
+            background-color: #c23a3a;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+        .item-name {
+            font-weight: bold;
+        }
+        .item-price {
+            color: #c23a3a;
+        }
+        .item-description {
+            font-size: 0.9em;
+            color: #666;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مطعمنا اللذيذ</h1>
+            <p>نقدم لكم أطيب المأكولات بأجود المكونات</p>
+        </header>
+
+        <section class="category">
+            <h2 class="category-title">المقبلات</h2>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">حمص بالزيت والليمون</div>
+                    <div class="item-description">حمص مصنوع يدوياً مع زيت الزيتون وعصير الليمون الطازج</div>
+                </div>
+                <div class="item-price">15 ر.س</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">تبولة</div>
+                    <div class="item-description">سلطة البقدونس والبرغل مع النعناع والليمون</div>
+                </div>
+                <div class="item-price">18 ر.س</div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">الوجبات الرئيسية</h2>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">منسف</div>
+                    <div class="item-description">لحم ضأن مع الأرز واللبن</div>
+                </div>
+                <div class="item-price">55 ر.س</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">مقلوبة</div>
+                    <div class="item-description">أرز مع الباذنجان والدجاج</div>
+                </div>
+                <div class="item-price">45 ر.س</div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2 class="category-title">المشروبات</h2>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">عصير ليمون بالنعناع</div>
+                </div>
+                <div class="item-price">12 ر.س</div>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">قهوة عربية</div>
+                </div>
+                <div class="item-price">10 ر.س</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>شكراً لزيارتكم - نتمنى لكم وجبة شهية</p>
+            <p>للطلبات: 0551234567</p>
+        </footer>
+    </div>
+</body>
+</html>
